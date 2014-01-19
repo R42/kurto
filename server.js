@@ -65,5 +65,5 @@ function redirect(req, res, next) {
   res.redirect(entry.url);
 }
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
 
