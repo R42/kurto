@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Shortens</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Encurtador</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="spinner" style="display: none">
+              <div class="rect1"></div>
+              <div class="rect2"></div>
+              <div class="rect3"></div>
+              <div class="rect4"></div>
+              <div class="rect5"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Create a new shortened url</h3>
+        </div>
+        <div class="panel-body">
+          <form role="form">
+            <div class="input-group">
+              <input type="text" name="url" class="form-control" placeholder="Enter a url...">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">Shorten!</button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <table class="table table-hover" style="display: none">
+        <thead>
+          <tr>
+            <th class="col-sm-3">Short</th>
+            <th>Original</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+      <img src="chef.png" class="chef" />
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js" data-main="lib/main.js"></script>
+  </body>
+</html>
